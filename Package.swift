@@ -26,7 +26,9 @@ let package = Package(
                 .define("DEBUG", .when(configuration: .debug)),
                 .define("RELEASE", .when(configuration: .release))
             ],
-            plugins: [.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")],
+            plugins: [
+                //.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")
+            ],
         )
     ],
     swiftLanguageModes: [.v5, .v6],
